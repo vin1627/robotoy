@@ -1,0 +1,23 @@
+{
+  "name": "robotoy",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node ./bin/robot.js"
+  },
+  "bin": {
+    "robot": "./bin/robot.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cli-color": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.3.0",
+    "sinon": "^1.16.1"
+  }
+}
