@@ -4,13 +4,13 @@
 If you install it locally, you can use it within the directory via ```npm start``` or ```node```.
 ```sh
 $ npm install
-$ npm start -- instructions.txt
-$ node ./bin/robot.js instructions.txt
+$ npm start -- command.txt
+$ node ./bin/robot.js command.txt
 ```
 
 ## Instruction format
 
-The simulator only accepts instructions.txt files, with one command per line. The commands available are:
+The simulator only accepts command.txt files, with one command per line. The commands available are:
 
 - **PLACE X, Y, DIRECTION (PLACE 0,1,NORTH):** Place the robot on the table.
 - **MOVE:** Move the robot one unit in the direction it is facing
@@ -19,7 +19,6 @@ The simulator only accepts instructions.txt files, with one command per line. Th
 - **REPORT:** Report the current position and direction of the robot (0,0,NORTH)
 
 
-- **example instruction**
 ```sh
 PLACE 1,2,NORTH
 MOVE
@@ -27,7 +26,6 @@ PLACE 1,2,SOUTH
 MOVE
 REPORT
 ```
-
 The table is a 5x5 grid, and any command that would result in the robot being off the table *will be ignored*.
 
 
