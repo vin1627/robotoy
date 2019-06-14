@@ -18,6 +18,16 @@ The simulator only accepts instructions.txt files, with one command per line. Th
 - **RIGHT:** Turn the robot right
 - **REPORT:** Report the current position and direction of the robot (0,0,NORTH)
 
+
+- **example instruction**
+```sh
+PLACE 1,2,NORTH
+MOVE
+PLACE 1,2,SOUTH
+MOVE
+REPORT
+```
+
 The table is a 5x5 grid, and any command that would result in the robot being off the table *will be ignored*.
 
 
